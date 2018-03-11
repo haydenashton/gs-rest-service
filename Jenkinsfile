@@ -1,6 +1,5 @@
 pipeline {
     agent { docker {
-      # image 'maven:3.3.3'
       image 'localhost/jenkins-maven-slave'
     } }
     stages {
