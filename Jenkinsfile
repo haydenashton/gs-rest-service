@@ -9,9 +9,7 @@ pipeline {
         stage('deploy') {
             steps {
                 sh 'pwd'
-                sh 'ls'
-                sh 'ls ~'
-                sh 'mvn -e compile tomcat7:deploy'
+                sh 'mvn -e -X clean compile tomcat7:deploy'
             }
         }
     }
