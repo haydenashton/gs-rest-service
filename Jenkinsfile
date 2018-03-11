@@ -8,6 +8,8 @@ pipeline {
         }
         stage('deploy') {
             steps {
+                sh 'pwd'
+                sh 'ls'
                 sh 'mvn compile tomcat7:deploy'
             }
         }
