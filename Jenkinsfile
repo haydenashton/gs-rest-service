@@ -1,7 +1,5 @@
 pipeline {
-    agent { docker {
-      image 'localhost/jenkins-maven-slave'
-    } }
+    agent { docker { image 'jenkins-maven-slave' } }
     stages {
         stage('build') {
             steps {
