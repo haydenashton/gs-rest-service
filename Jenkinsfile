@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls'
-                sh 'whoami'
+                sh 'ls ~'
                 sh 'mvn -e compile tomcat7:deploy'
             }
         }
