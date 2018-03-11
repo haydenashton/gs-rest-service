@@ -9,7 +9,8 @@ pipeline {
         stage('deploy') {
             steps {
                 sh 'pwd'
-                sh 'mvn -e -X clean compile org.apache.tomcat.maven:tomcat7-maven-plugin:deploy'
+                sh 'cat pom.xml'
+                sh 'mvn -e -X org.apache.tomcat.maven:tomcat7-maven-plugin:deploy'
             }
         }
     }
